@@ -135,6 +135,7 @@ border: none;
 border-radius: 8px;
 font-weight: 700;
 background: #111;
+color: white;
 }
 
 .login-box input:focus {
