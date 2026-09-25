@@ -169,3 +169,86 @@ text-decoration: none;
 .login-box a:hover {
 text-decoration: underline;
 }
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+    header {
+        align-items: center;
+        text-align: center;
+        padding: 90px 20px 20px;
+        min-height: auto;
+    }
+
+    header img {
+        width: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    header h1,
+    header p {
+        width: 100%;
+    }
+
+    .info,
+    .product {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .product {
+        padding-top: 130px;
+        min-height: 170px;
+    }
+
+    .product img {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90px;
+    }
+
+    .product h4,
+    .product p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding-top: 82px;
+    }
+
+    header a {
+        font-size: 14px;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    .main h2 {
+        font-size: 1.5rem;
+    }
+
+    .login-box {
+        width: min(88vw, 300px);
+    }
+
+    .info {
+        padding: 16px 12px;
+    }
+
+    .bestseller {
+        padding: 12px;
+    }
+}
